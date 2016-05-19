@@ -4,3 +4,4 @@ a brief introduction of NTU
 - History
 - Photos
 
+### Home page photo credit: 林圓方
