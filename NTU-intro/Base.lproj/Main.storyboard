@@ -10,12 +10,12 @@
             <string>HelveticaNeue-Bold</string>
             <string>HelveticaNeue-Bold</string>
             <string>HelveticaNeue-Bold</string>
-            <string>HelveticaNeue</string>
-            <string>HelveticaNeue</string>
-            <string>HelveticaNeue</string>
             <string>HelveticaNeue-Bold</string>
             <string>HelveticaNeue-Bold</string>
             <string>HelveticaNeue-Bold</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
             <string>HelveticaNeue-Bold</string>
             <string>HelveticaNeue-Bold</string>
             <string>HelveticaNeue-Bold</string>
@@ -277,7 +277,7 @@
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="29" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zta-aQ-j4J">
                                 <rect key="frame" x="20" y="343.5" width="560" height="122"/>
-                                <mutableString key="text">National Taiwan University is a comprehensive research institute that is based on a complete and integrated academic foundation. The University's students and faculty are among the most excellent in the nation, and its motto of “Integrity, Diligence, Fidelity, and Compassion” have served as the bedrock in its pursuit of educational, research, as well as administrative excellence.</mutableString>
+                                <string key="text">National Taiwan University is a comprehensive research institute that is based on a complete and integrated academic foundation. The University's students and faculty are among the most excellent in the nation, and its motto of “Integrity, Diligence, Fidelity, and Compassion” have served as the bedrock in its pursuit of educational, research, as well as administrative excellence.</string>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -427,38 +427,63 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Drunken Moon Lake" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m03-bo-NcL">
-                                <rect key="frame" x="24" y="404" width="153" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Main Library" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yl7-UI-wBF">
+                                <rect key="frame" x="73" y="549" width="94" height="21"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" red="0.73106060610000001" green="0.42041555479999998" blue="0.14632771780000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=compact" misplaced="YES">
+                                    <rect key="frame" x="73" y="379" width="94.5" height="21"/>
+                                </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Main Library" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yl7-UI-wBF">
-                                <rect key="frame" x="82" y="550" width="95" height="21"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" red="0.73106060610000001" green="0.42041555479999998" blue="0.14632771780000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lake" translatesAutoresizingMaskIntoConstraints="NO" id="sMt-4n-rHq">
-                                <rect key="frame" x="20" y="296" width="200" height="100"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lake" translatesAutoresizingMaskIntoConstraints="NO" id="sMt-4n-rHq">
+                                <rect key="frame" x="20" y="297" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="fMq-Ma-0qE">
+                                        <variation key="heightClass=compact" constant="160"/>
+                                        <variation key="heightClass=regular-widthClass=compact" constant="150"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="100" id="mHW-iB-Hcl">
+                                        <variation key="heightClass=compact" constant="80"/>
+                                        <variation key="heightClass=regular-widthClass=compact" constant="75"/>
+                                    </constraint>
+                                </constraints>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="20" y="296" width="150" height="75"/>
                                 </variation>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lib" translatesAutoresizingMaskIntoConstraints="NO" id="lHU-yC-sWG">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lib" translatesAutoresizingMaskIntoConstraints="NO" id="lHU-yC-sWG">
                                 <rect key="frame" x="20" y="442" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Dhr-Sb-NVE">
+                                        <variation key="heightClass=compact" constant="80"/>
+                                        <variation key="heightClass=regular-widthClass=compact" constant="75"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="200" id="gun-cc-kAT">
+                                        <variation key="heightClass=compact" constant="160"/>
+                                        <variation key="heightClass=regular-widthClass=compact" constant="150"/>
+                                    </constraint>
+                                </constraints>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="20" y="442" width="150" height="75"/>
                                 </variation>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Royal Palm Blvd." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gKG-tX-zCm">
-                                <rect key="frame" x="382" y="400" width="126" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Royal Palm Blvd." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gKG-tX-zCm">
+                                <rect key="frame" x="417" y="404" width="126" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="126" id="Hvo-NE-1zX"/>
+                                    <constraint firstAttribute="height" constant="21" id="fly-49-LIl"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" red="0.73106060610000001" green="0.42041555479999998" blue="0.14632771780000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fu Garden" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wr0-Ce-5Ld">
-                                <rect key="frame" x="428" y="546" width="80" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fu Garden" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wr0-Ce-5Ld">
+                                <rect key="frame" x="440" y="549" width="80" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Va5-vs-JaR"/>
+                                    <constraint firstAttribute="width" constant="80" id="euR-WX-tkY"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" red="0.73106060610000001" green="0.42041555479999998" blue="0.14632771780000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -470,14 +495,34 @@
                                     <constraint firstAttribute="height" constant="90" id="csD-OE-6UO"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="road" translatesAutoresizingMaskIntoConstraints="NO" id="e2k-QG-GWL">
-                                <rect key="frame" x="351" y="292" width="200" height="100"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="road" translatesAutoresizingMaskIntoConstraints="NO" id="e2k-QG-GWL">
+                                <rect key="frame" x="380" y="297" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="0Ha-dh-jey">
+                                        <variation key="heightClass=compact" constant="160"/>
+                                        <variation key="heightClass=regular-widthClass=compact" constant="150"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="100" id="vvQ-Hs-VF9">
+                                        <variation key="heightClass=compact" constant="80"/>
+                                        <variation key="heightClass=regular-widthClass=compact" constant="75"/>
+                                    </constraint>
+                                </constraints>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="351" y="292" width="150" height="75"/>
                                 </variation>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="06b" translatesAutoresizingMaskIntoConstraints="NO" id="Us8-3n-6Xa">
-                                <rect key="frame" x="351" y="438" width="200" height="100"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="06b" translatesAutoresizingMaskIntoConstraints="NO" id="Us8-3n-6Xa">
+                                <rect key="frame" x="380" y="442" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="6JO-1l-N7d">
+                                        <variation key="heightClass=compact" constant="160"/>
+                                        <variation key="heightClass=regular-widthClass=compact" constant="150"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="100" id="ztI-Hd-WO3">
+                                        <variation key="heightClass=compact" constant="80"/>
+                                        <variation key="heightClass=regular-widthClass=compact" constant="75"/>
+                                    </constraint>
+                                </constraints>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="351" y="438" width="150" height="75"/>
                                 </variation>
@@ -492,19 +537,51 @@
                                 <color key="textColor" red="0.73106060610000001" green="0.42041555479999998" blue="0.14632771780000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drunken Moon Lake" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m03-bo-NcL">
+                                <rect key="frame" x="52" y="404" width="135.5" height="20.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.73106060610000001" green="0.42041555479999998" blue="0.14632771780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Yl7-UI-wBF" firstAttribute="top" secondItem="lHU-yC-sWG" secondAttribute="bottom" constant="7" id="2vY-NQ-oRI"/>
+                            <constraint firstItem="cos-j3-3Ku" firstAttribute="top" secondItem="Yl7-UI-wBF" secondAttribute="bottom" constant="30" id="4M5-DV-fgV">
+                                <variation key="heightClass=compact" constant="0.0"/>
+                            </constraint>
                             <constraint firstItem="iQF-jX-1gU" firstAttribute="centerX" secondItem="nPE-Sj-8bD" secondAttribute="centerX" id="914-q5-VbU"/>
+                            <constraint firstItem="gKG-tX-zCm" firstAttribute="top" secondItem="e2k-QG-GWL" secondAttribute="bottom" constant="7" id="AhZ-P4-VPc"/>
                             <constraint firstItem="9ay-2W-WCN" firstAttribute="top" secondItem="iQF-jX-1gU" secondAttribute="bottom" constant="7" id="BCa-tQ-faK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Us8-3n-6Xa" secondAttribute="trailing" id="BmI-6t-VvJ"/>
+                            <constraint firstItem="Yl7-UI-wBF" firstAttribute="leading" secondItem="nPE-Sj-8bD" secondAttribute="leadingMargin" constant="53" id="BmW-RI-6et"/>
+                            <constraint firstItem="wr0-Ce-5Ld" firstAttribute="top" secondItem="Us8-3n-6Xa" secondAttribute="bottom" constant="7" id="I8p-hD-QWm"/>
+                            <constraint firstItem="wr0-Ce-5Ld" firstAttribute="centerX" secondItem="Us8-3n-6Xa" secondAttribute="centerX" id="IFh-WH-8ht"/>
                             <constraint firstItem="W60-77-2Tg" firstAttribute="top" secondItem="nPE-Sj-8bD" secondAttribute="top" id="K7W-d9-R3K"/>
+                            <constraint firstItem="cos-j3-3Ku" firstAttribute="top" secondItem="wr0-Ce-5Ld" secondAttribute="bottom" constant="30" id="OKd-Qp-FxJ">
+                                <variation key="heightClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="Us8-3n-6Xa" firstAttribute="top" secondItem="gKG-tX-zCm" secondAttribute="bottom" constant="17" id="TcL-WN-qaU"/>
+                            <constraint firstItem="sMt-4n-rHq" firstAttribute="leading" secondItem="nPE-Sj-8bD" secondAttribute="leadingMargin" id="V41-72-GjL"/>
                             <constraint firstAttribute="trailing" secondItem="W60-77-2Tg" secondAttribute="trailing" id="Xo3-2a-yGM"/>
+                            <constraint firstItem="m03-bo-NcL" firstAttribute="centerX" secondItem="sMt-4n-rHq" secondAttribute="centerX" id="f9t-uN-xFY"/>
                             <constraint firstItem="d21-kk-2h8" firstAttribute="centerX" secondItem="nPE-Sj-8bD" secondAttribute="centerX" id="ffL-vh-i80"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="e2k-QG-GWL" secondAttribute="trailing" id="gZF-zW-UZX"/>
                             <constraint firstItem="W60-77-2Tg" firstAttribute="leading" secondItem="nPE-Sj-8bD" secondAttribute="leading" id="hOf-SP-fDF"/>
                             <constraint firstItem="iQF-jX-1gU" firstAttribute="top" secondItem="W60-77-2Tg" secondAttribute="bottom" constant="7" id="itz-Md-6Uf"/>
+                            <constraint firstItem="Yl7-UI-wBF" firstAttribute="centerX" secondItem="lHU-yC-sWG" secondAttribute="centerX" id="k3g-aA-3Le"/>
+                            <constraint firstItem="gKG-tX-zCm" firstAttribute="centerX" secondItem="e2k-QG-GWL" secondAttribute="centerX" id="lsD-Fg-BZI"/>
+                            <constraint firstItem="m03-bo-NcL" firstAttribute="top" secondItem="sMt-4n-rHq" secondAttribute="bottom" constant="7" id="nKt-t3-Snh"/>
+                            <constraint firstItem="lHU-yC-sWG" firstAttribute="top" secondItem="m03-bo-NcL" secondAttribute="bottom" constant="17" id="pS0-6R-eMd"/>
                             <constraint firstItem="d21-kk-2h8" firstAttribute="top" secondItem="iGH-dH-xMm" secondAttribute="bottom" constant="30" id="r5q-uG-2LE"/>
+                            <constraint firstItem="lHU-yC-sWG" firstAttribute="leading" secondItem="sMt-4n-rHq" secondAttribute="leading" id="wWJ-pd-v4d"/>
                             <constraint firstItem="9ay-2W-WCN" firstAttribute="centerX" secondItem="nPE-Sj-8bD" secondAttribute="centerX" id="x0a-mC-wjF"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="BmW-RI-6et"/>
+                            </mask>
+                        </variation>
                         <variation key="heightClass=compact">
                             <mask key="subviews">
                                 <exclude reference="iQF-jX-1gU"/>
@@ -515,7 +592,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pwx-qF-Rzf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="606" y="559"/>
+            <point key="canvasLocation" x="606" y="558"/>
         </scene>
     </scenes>
     <resources>
